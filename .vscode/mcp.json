@@ -1,0 +1,26 @@
+{
+  "mcpServers": {
+    "weather": {
+      "command": "node",
+      "args": ["dist/servers/weather.js"],
+      "env": {
+        "NODE_ENV": "development"
+      }
+    },
+    "calculator": {
+      "command": "node", 
+      "args": ["dist/servers/calculator.js"],
+      "env": {
+        "NODE_ENV": "development"
+      }
+    },
+    "filesystem": {
+      "command": "node",
+      "args": ["dist/servers/filesystem.js"],
+      "env": {
+        "NODE_ENV": "development",
+        "ALLOWED_PATHS": "/tmp,/Users/pawantejwani/development/personal/mcp_learning/examples"
+      }
+    }
+  }
+}
